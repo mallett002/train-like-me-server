@@ -1,0 +1,23 @@
+{
+  "name": "train-like-me-server",
+  "version": "1.0.0",
+  "description": "Server side for Train Like Me",
+  "main": "index.ts",
+  "scripts": {
+    "build:dev": "nodemon 'index.ts' --exec 'ts-node' index.ts -e ts,graphql",
+    "start": "npm run build:dev",
+    "test": "test"
+  },
+  "author": "Will Mallett",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.17.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "http": "0.0.1-security",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
